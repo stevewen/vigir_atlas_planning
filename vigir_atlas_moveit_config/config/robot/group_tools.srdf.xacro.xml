@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:macro name="atlas_6dof_arm_joints_macro" params="prefix">
+    <joint name="${prefix}arm_shz" />
+    <joint name="${prefix}arm_shx" />
+    <joint name="${prefix}arm_ely" />
+    <joint name="${prefix}arm_elx" />
+    <joint name="${prefix}arm_wry" />
+    <joint name="${prefix}arm_wrx" />
+  </xacro:macro>
+  
+  <xacro:macro name="atlas_7dof_arm_joints_macro" params="prefix">
+    <joint name="${prefix}arm_shz" />
+    <joint name="${prefix}arm_shx" />
+    <joint name="${prefix}arm_ely" />
+    <joint name="${prefix}arm_elx" />
+    <joint name="${prefix}arm_wry" />
+    <joint name="${prefix}arm_wrx" />
+    <joint name="${prefix}arm_wry2" />
+  </xacro:macro>
+
+  <xacro:macro name="atlas_leg_joints_macro" params="prefix">
+    <joint name="${prefix}leg_hpz" />
+    <joint name="${prefix}leg_hpx" />
+    <joint name="${prefix}leg_hpy" />
+    <joint name="${prefix}leg_kny" />
+    <joint name="${prefix}leg_aky" />
+    <joint name="${prefix}leg_akx" />
+  </xacro:macro>    
+  
+  <xacro:macro name="atlas_torso_joints_macro">
+    <joint name="back_bkz" />
+    <joint name="back_bky" />
+    <joint name="back_bkx" />
+  </xacro:macro>    
+
+</robot>

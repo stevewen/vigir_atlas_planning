@@ -8,5 +8,5 @@
  <node name    = "rosparam_append_node" 
        pkg     = "vigir_atlas_moveit_config"
        type    = "rosparam_append"
-       args    = "$(find vigir_atlas_moveit_config)/config/controllers.yaml /move_group/controller_list"/>
+       args    = "$(find vigir_atlas_moveit_config)/config/controllers/$(env FLOR_ROBOT_TYPE)_controllers.yaml /move_group/controller_list"/>
 </launch>

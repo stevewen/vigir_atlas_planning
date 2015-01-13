@@ -3,177 +3,67 @@
     This is a format for representing semantic information about the robot structure.
     A URDF file must exist for this robot as well, where the joints and the links that are referenced are defined
 -->
-<robot name="atlas">
+<robot xmlns:xacro="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface" name="atlas">
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
-      <group name="l_arm_group">
-        <joint name="l_arm_shz" />
-        <joint name="l_arm_shx" />
-        <joint name="l_arm_ely" />
-        <joint name="l_arm_elx" />
-        <joint name="l_arm_wry" />
-        <joint name="l_arm_wrx" />
-	<!--<joint name="l_arm_wry2" />-->
+  
+    <!--<xacro:include filename="$(find vigir_atlas_moveit_config)/config/robot/group_tools.srdf.xacro.xml" />-->
+    <xacro:include filename="$(find vigir_atlas_moveit_config)/config/robot/$(env FLOR_ROBOT_TYPE)_joint_macros.srdf.xacro.xml" />
+      
+    <group name="l_arm_group">
+      <xacro:atlas_arm_joints_macro prefix="l_"/>
     </group>
-        <group name="l_arm_group_position_only_ik">
-        <joint name="l_arm_shz" />
-        <joint name="l_arm_shx" />
-        <joint name="l_arm_ely" />
-        <joint name="l_arm_elx" />
-        <joint name="l_arm_wry" />
-        <joint name="l_arm_wrx" />
-	<!--<joint name="l_arm_wry2" />-->
+    <group name="l_arm_group_position_only_ik">
+       <xacro:atlas_arm_joints_macro prefix="l_"/>
     </group>
     <group name="l_leg_group">
-        <joint name="l_leg_hpz" />
-        <joint name="l_leg_hpx" />
-        <joint name="l_leg_hpy" />
-        <joint name="l_leg_kny" />
-        <joint name="l_leg_aky" />
-        <joint name="l_leg_akx" />
+      <xacro:atlas_leg_joints_macro prefix="l_"/>
     </group>
     <group name="r_leg_group">
-        <joint name="r_leg_hpz" />
-        <joint name="r_leg_hpx" />
-        <joint name="r_leg_hpy" />
-        <joint name="r_leg_kny" />
-        <joint name="r_leg_aky" />
-        <joint name="r_leg_akx" />
+      <xacro:atlas_leg_joints_macro prefix="r_"/>
     </group>
     <group name="both_legs_group">
-        <joint name="l_leg_hpz" />
-        <joint name="l_leg_hpx" />
-        <joint name="l_leg_hpy" />
-        <joint name="l_leg_kny" />
-        <joint name="l_leg_aky" />
-        <joint name="l_leg_akx" />
-        <joint name="r_leg_hpz" />
-        <joint name="r_leg_hpx" />
-        <joint name="r_leg_hpy" />
-        <joint name="r_leg_kny" />
-        <joint name="r_leg_aky" />
-        <joint name="r_leg_akx" />
+      <xacro:atlas_leg_joints_macro prefix="l_"/>
+      <xacro:atlas_leg_joints_macro prefix="r_"/>      
     </group>
     <group name="all_appendages_group">
-        <joint name="l_leg_hpz" />
-        <joint name="l_leg_hpx" />
-        <joint name="l_leg_hpy" />
-        <joint name="l_leg_kny" />
-        <joint name="l_leg_aky" />
-        <joint name="l_leg_akx" />
-        <joint name="l_arm_shz" />
-        <joint name="l_arm_shx" />
-        <joint name="l_arm_ely" />
-        <joint name="l_arm_elx" />
-        <joint name="l_arm_wry" />
-        <joint name="l_arm_wrx" />
-        <joint name="r_arm_shz" />
-        <joint name="r_arm_shx" />
-        <joint name="r_arm_ely" />
-        <joint name="r_arm_elx" />
-        <joint name="r_arm_wry" />
-        <joint name="r_arm_wrx" />
-        <joint name="r_leg_hpz" />
-        <joint name="r_leg_hpx" />
-        <joint name="r_leg_hpy" />
-        <joint name="r_leg_kny" />
-        <joint name="r_leg_aky" />
-        <joint name="r_leg_akx" />
+      <xacro:atlas_leg_joints_macro prefix="l_"/>
+      <xacro:atlas_arm_joints_macro prefix="l_"/>
+      <xacro:atlas_arm_joints_macro prefix="r_"/>
+      <xacro:atlas_leg_joints_macro prefix="r_"/>
     </group>
     <group name="r_arm_group">
-        <joint name="r_arm_shz" />
-        <joint name="r_arm_shx" />
-        <joint name="r_arm_ely" />
-        <joint name="r_arm_elx" />
-        <joint name="r_arm_wry" />
-        <joint name="r_arm_wrx" />
+      <xacro:atlas_arm_joints_macro prefix="r_"/>
     </group>
-        <group name="r_arm_group_position_only_ik">
-        <joint name="r_arm_shz" />
-        <joint name="r_arm_shx" />
-        <joint name="r_arm_ely" />
-        <joint name="r_arm_elx" />
-        <joint name="r_arm_wry" />
-        <joint name="r_arm_wrx" />
+    <group name="r_arm_group_position_only_ik">
+       <xacro:atlas_arm_joints_macro prefix="r_"/>
     </group>
     <group name="l_arm_with_torso_group">
-        <joint name="l_arm_shz" />
-        <joint name="l_arm_shx" />
-        <joint name="l_arm_ely" />
-        <joint name="l_arm_elx" />
-        <joint name="l_arm_wry" />
-        <joint name="l_arm_wrx" />
-        <joint name="back_bkz" />
-        <joint name="back_bky" />
-        <joint name="back_bkx" />
+       <xacro:atlas_arm_joints_macro prefix="l_"/>
+       <xacro:atlas_torso_joints_macro/>
     </group>
         <group name="l_arm_with_torso_group_position_only_ik">
-        <joint name="l_arm_shz" />
-        <joint name="l_arm_shx" />
-        <joint name="l_arm_ely" />
-        <joint name="l_arm_elx" />
-        <joint name="l_arm_wry" />
-        <joint name="l_arm_wrx" />
-        <joint name="back_bkz" />
-        <joint name="back_bky" />
-        <joint name="back_bkx" />
+       <xacro:atlas_arm_joints_macro prefix="l_"/>
+       <xacro:atlas_torso_joints_macro/>
     </group>
     <group name="r_arm_with_torso_group">
-        <joint name="back_bkz" />
-        <joint name="back_bky" />
-        <joint name="back_bkx" />
-        <joint name="r_arm_shz" />
-        <joint name="r_arm_shx" />
-        <joint name="r_arm_ely" />
-        <joint name="r_arm_elx" />
-        <joint name="r_arm_wry" />
-        <joint name="r_arm_wrx" />
+       <xacro:atlas_torso_joints_macro/>
+       <xacro:atlas_arm_joints_macro prefix="r_"/>
     </group>
-        <group name="r_arm_with_torso_group_position_only_ik">
-        <joint name="back_bkz" />
-        <joint name="back_bky" />
-        <joint name="back_bkx" />
-        <joint name="r_arm_shz" />
-        <joint name="r_arm_shx" />
-        <joint name="r_arm_ely" />
-        <joint name="r_arm_elx" />
-        <joint name="r_arm_wry" />
-        <joint name="r_arm_wrx" />
+    <group name="r_arm_with_torso_group_position_only_ik">
+       <xacro:atlas_torso_joints_macro/>
+       <xacro:atlas_arm_joints_macro prefix="r_"/>
     </group>
     <group name="both_arms_with_torso_group">
-        <joint name="back_bkz" />
-        <joint name="back_bky" />
-        <joint name="back_bkx" />
-        <joint name="l_arm_shz" />
-        <joint name="l_arm_shx" />
-        <joint name="l_arm_ely" />
-        <joint name="l_arm_elx" />
-        <joint name="l_arm_wry" />
-        <joint name="l_arm_wrx" />
-        <joint name="r_arm_shz" />
-        <joint name="r_arm_shx" />
-        <joint name="r_arm_ely" />
-        <joint name="r_arm_elx" />
-        <joint name="r_arm_wry" />
-        <joint name="r_arm_wrx" />
+       <xacro:atlas_torso_joints_macro/>
+       <xacro:atlas_arm_joints_macro prefix="l_"/>
+       <xacro:atlas_arm_joints_macro prefix="r_"/>
     </group>
     <group name="both_arms_group">
-        <joint name="l_arm_shz" />
-        <joint name="l_arm_shx" />
-        <joint name="l_arm_ely" />
-        <joint name="l_arm_elx" />
-        <joint name="l_arm_wry" />
-        <joint name="l_arm_wrx" />
-        <joint name="r_arm_shz" />
-        <joint name="r_arm_shx" />
-        <joint name="r_arm_ely" />
-        <joint name="r_arm_elx" />
-        <joint name="r_arm_wry" />
-        <joint name="r_arm_wrx" />
+       <xacro:atlas_arm_joints_macro prefix="l_"/>
+       <xacro:atlas_arm_joints_macro prefix="r_"/>
     </group>
     <group name="torso_group">
-        <joint name="back_bkz" />
-        <joint name="back_bky" />
-        <joint name="back_bkx" />
+       <xacro:atlas_torso_joints_macro/>
     </group>
     <group name="neck_group">
         <joint name="neck_ry" />

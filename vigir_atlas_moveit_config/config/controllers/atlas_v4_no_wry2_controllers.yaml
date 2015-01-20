@@ -3,7 +3,7 @@
    type: FollowJointTrajectory
    default: true
    joints:
-      - l_arm_shy
+      - l_arm_shz
       - l_arm_shx
       - l_arm_ely
       - l_arm_elx
@@ -15,7 +15,7 @@
    type: FollowJointTrajectory
    default: true
    joints:
-      - r_arm_shy
+      - r_arm_shz
       - r_arm_shx
       - r_arm_ely
       - r_arm_elx

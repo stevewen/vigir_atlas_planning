@@ -1,7 +1,9 @@
 <?xml version="1.0"?>
 
 <robot xmlns:xacro="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface" name="atlas" >
-    
+  
+  <passive_joint name="hokuyo_joint" />
+
   <xacro:include filename="$(find vigir_atlas_moveit_config)/config/robot/$(env FLOR_ROBOT_TYPE)_disabled_collisions.srdf"/>
   <xacro:include filename="$(find vigir_atlas_moveit_config)/config/robot/planning_groups.srdf"/>
   <xacro:include filename="$(find vigir_atlas_moveit_config)/config/robot/virtual_joint.srdf"/>

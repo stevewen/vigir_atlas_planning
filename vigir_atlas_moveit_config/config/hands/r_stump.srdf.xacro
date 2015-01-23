@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface" name="r_stump" >
+
+  <xacro:macro name="disable_right_hand_collision_checks" params="link_name">
+  </xacro:macro>
+
+</robot>

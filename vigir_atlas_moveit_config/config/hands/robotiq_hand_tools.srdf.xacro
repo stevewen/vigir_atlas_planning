@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface" name="l_robotiq" >
+
+<!--
+Disables self collision between given link_name and all other links belonging to hand
+-->
+<xacro:macro name="disable_robotiq_hand_collision_helper" params="side link_name">
+  <disable_collisions link1="${link_name}" link2="${side}_palm" reason="Never" />
+  <disable_collisions link1="${link_name}" link2="${side}_f1_link_0" reason="Never" />
+  <disable_collisions link1="${link_name}" link2="${side}_f1_link_1" reason="Never" />
+  <disable_collisions link1="${link_name}" link2="${side}_f1_link_2" reason="Never" />  
+  <disable_collisions link1="${link_name}" link2="${side}_f1_link_3" reason="Never" />
+  <disable_collisions link1="${link_name}" link2="${side}_f2_link_0" reason="Never" />
+  <disable_collisions link1="${link_name}" link2="${side}_f2_link_1" reason="Never" />
+  <disable_collisions link1="${link_name}" link2="${side}_f2_link_2" reason="Never" />  
+  <disable_collisions link1="${link_name}" link2="${side}_f2_link_3" reason="Never" />
+  <disable_collisions link1="${link_name}" link2="${side}_f0_link_0" reason="Never" />
+  <disable_collisions link1="${link_name}" link2="${side}_f0_link_1" reason="Never" />
+  <disable_collisions link1="${link_name}" link2="${side}_f0_link_2" reason="Never" />  
+  <disable_collisions link1="${link_name}" link2="${side}_f0_link_3" reason="Never" />
+</xacro:macro>    
+
+<!--
+Completely disables self collision checks for hand
+-->
+<xacro:macro name="disable_robotiq_hand_self_collisions" params="side">
+  <xacro:disable_robotiq_hand_collision_helper side="${side}" link_name="${side}_palm"/>
+  <xacro:disable_robotiq_hand_collision_helper side="${side}" link_name="${side}_f0_link_0"/>
+  <xacro:disable_robotiq_hand_collision_helper side="${side}" link_name="${side}_f0_link_1"/>
+  <xacro:disable_robotiq_hand_collision_helper side="${side}" link_name="${side}_f0_link_2"/>
+  <xacro:disable_robotiq_hand_collision_helper side="${side}" link_name="${side}_f0_link_3"/>
+  <xacro:disable_robotiq_hand_collision_helper side="${side}" link_name="${side}_f1_link_0"/>
+  <xacro:disable_robotiq_hand_collision_helper side="${side}" link_name="${side}_f1_link_1"/>  
+  <xacro:disable_robotiq_hand_collision_helper side="${side}" link_name="${side}_f1_link_2"/>
+  <xacro:disable_robotiq_hand_collision_helper side="${side}" link_name="${side}_f1_link_3"/>
+  <xacro:disable_robotiq_hand_collision_helper side="${side}" link_name="${side}_f2_link_0"/>  
+  <xacro:disable_robotiq_hand_collision_helper side="${side}" link_name="${side}_f2_link_1"/>
+  <xacro:disable_robotiq_hand_collision_helper side="${side}" link_name="${side}_f2_link_2"/>
+  <xacro:disable_robotiq_hand_collision_helper side="${side}" link_name="${side}_f2_link_3"/>
+</xacro:macro>
+
+</robot>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface" name="l_robotiq" >
+
+  <xacro:include filename="$(find vigir_atlas_moveit_config)/config/hands/robotiq_hand_tools.srdf.xacro" />
+  
+  <group name="left_hand">
+      <joint name="left_f0_j1" />
+      <joint name="left_f1_j1" />
+      <joint name="left_f2_j1" />
+      <joint name="left_f1_j0" />
+      <joint name="left_f2_j0" />
+      <joint name="left_f0_j2" />
+      <joint name="left_f1_j2" />
+      <joint name="left_f2_j2" />
+      <joint name="left_f0_j3" />
+      <joint name="left_f1_j3" />
+      <joint name="left_f2_j3" />
+  </group>
+  
+  <end_effector name="l_hand_eef" parent_link="l_hand" group="left_hand" />
+
+  <xacro:disable_robotiq_hand_self_collisions side="left"/>
+  
+  <xacro:macro name="disable_left_hand_collision_checks" params="link_name">
+    <xacro:disable_robotiq_hand_collision_helper side="left" link_name="${link_name}"/>     
+  </xacro:macro>
+
+</robot>

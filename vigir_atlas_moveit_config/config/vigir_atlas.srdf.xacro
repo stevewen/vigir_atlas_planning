@@ -8,20 +8,21 @@
   <xacro:include filename="$(find vigir_atlas_moveit_config)/config/robot/planning_groups.srdf"/>
   <xacro:include filename="$(find vigir_atlas_moveit_config)/config/robot/virtual_joint.srdf"/>
   
-<!--  <xacro:include filename="$(find flor_atlas_moveit_config)/config/robot/atlas_tools.srdf.xacro" />
+  <!--  <xacro:include filename="$(find flor_atlas_moveit_config)/config/robot/atlas_tools.srdf.xacro" /> -->
   
-  <xacro:include filename="$(find flor_atlas_moveit_config)/config/hands/$(env FLOR_LEFT_HAND_TYPE).srdf.xacro" />
-  <xacro:include filename="$(find flor_atlas_moveit_config)/config/hands/$(env FLOR_RIGHT_HAND_TYPE).srdf.xacro" />
+  <xacro:include filename="$(find vigir_atlas_moveit_config)/config/hands/$(env FLOR_LEFT_HAND_TYPE).srdf.xacro" />
+  <xacro:include filename="$(find vigir_atlas_moveit_config)/config/hands/$(env FLOR_RIGHT_HAND_TYPE).srdf.xacro" />
   
+  <!--
   <xacro:include filename="$(find flor_atlas_moveit_config)/config/multisense/multisense_common.srdf.xacro" />
   <xacro:include filename="$(find flor_atlas_moveit_config)/config/multisense/$(env FLOR_MULTISENSE_TYPE).srdf.xacro" />-->
   
   <!--Create macro that will be used to disable collisions for links that lie inside other collision geometry below-->
   <xacro:macro name="disable_all_collisions" params="disable_link_name">
     <xacro:disable_robot_collision_helper disable_robot_link_name="${disable_link_name}"/>
-<!--    <xacro:disable_left_hand_collision_checks link_name="${disable_link_name}"/>
+    <xacro:disable_left_hand_collision_checks link_name="${disable_link_name}"/>
     <xacro:disable_right_hand_collision_checks link_name="${disable_link_name}"/>
-    <xacro:disable_multisense_collision_helper link_name="${disable_link_name}"/>-->
+    <!--<xacro:disable_multisense_collision_helper link_name="${disable_link_name}"/>-->
   </xacro:macro>    
   
 <!--  <xacro:disable_all_collisions disable_link_name="ltorso" />

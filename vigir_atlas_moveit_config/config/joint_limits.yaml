@@ -2,4 +2,138 @@
 # Specific joint properties can be changed with the keys [max_position, min_position, max_velocity, max_acceleration]
 # Joint limits can be turned off with [has_velocity_limits, has_acceleration_limits]
 joint_limits:
-  {}
+  back_bky:
+    has_velocity_limits: true
+    max_velocity: &default_max_velocity 0.5
+    has_acceleration_limits: true
+    max_acceleration: &default_max_acceleration 2.4
+  back_bkx:
+    has_velocity_limits: true
+    max_velocity: *default_max_velocity
+    has_acceleration_limits: true
+    max_acceleration: *default_max_acceleration
+  back_bkz:
+    has_velocity_limits: true
+    max_velocity: *default_max_velocity
+    has_acceleration_limits: true
+    max_acceleration: *default_max_acceleration
+  l_arm_shx:
+    has_velocity_limits: true
+    max_velocity: *default_max_velocity
+    has_acceleration_limits: true
+    max_acceleration: *default_max_acceleration
+  l_arm_wry:
+    has_velocity_limits: true
+    max_velocity: *default_max_velocity
+    has_acceleration_limits: true
+    max_acceleration: *default_max_acceleration
+  l_arm_shz:
+    has_velocity_limits: true
+    max_velocity: *default_max_velocity
+    has_acceleration_limits: true
+    max_acceleration: *default_max_acceleration
+  l_arm_ely:
+    has_velocity_limits: true
+    max_velocity: *default_max_velocity
+    has_acceleration_limits: true
+    max_acceleration: *default_max_acceleration
+  r_arm_ely:
+    has_velocity_limits: true
+    max_velocity: *default_max_velocity
+    has_acceleration_limits: true
+    max_acceleration: *default_max_acceleration
+  l_arm_wrx:
+    has_velocity_limits: true
+    max_velocity: *default_max_velocity
+    has_acceleration_limits: true
+    max_acceleration: *default_max_acceleration
+  r_arm_shz:
+    has_velocity_limits: true
+    max_velocity: *default_max_velocity
+    has_acceleration_limits: true
+    max_acceleration: *default_max_acceleration
+  l_leg_hpz:
+    has_velocity_limits: true
+    max_velocity: *default_max_velocity
+    has_acceleration_limits: true
+    max_acceleration: *default_max_acceleration
+  r_leg_akx:
+    has_velocity_limits: true
+    max_velocity: *default_max_velocity
+    has_acceleration_limits: true
+    max_acceleration: *default_max_acceleration
+  r_leg_kny:
+    has_velocity_limits: true
+    max_velocity: *default_max_velocity
+    has_acceleration_limits: true
+    max_acceleration: *default_max_acceleration
+  r_leg_hpx:
+    has_velocity_limits: true
+    max_velocity: *default_max_velocity
+    has_acceleration_limits: true
+    max_acceleration: *default_max_acceleration
+  r_leg_aky:
+    has_velocity_limits: true
+    max_velocity: *default_max_velocity
+    has_acceleration_limits: true
+    max_acceleration: *default_max_acceleration
+  r_leg_hpy:
+    has_velocity_limits: true
+    max_velocity: *default_max_velocity
+    has_acceleration_limits: true
+    max_acceleration: *default_max_acceleration
+  r_arm_wrx:
+    has_velocity_limits: true
+    max_velocity: *default_max_velocity
+    has_acceleration_limits: true
+    max_acceleration: *default_max_acceleration
+  l_arm_elx:
+    has_velocity_limits: true
+    max_velocity: *default_max_velocity
+    has_acceleration_limits: true
+    max_acceleration: *default_max_acceleration
+  r_arm_wry:
+    has_velocity_limits: true
+    max_velocity: *default_max_velocity
+    has_acceleration_limits: true
+    max_acceleration: *default_max_acceleration
+  l_leg_kny:
+    has_velocity_limits: true
+    max_velocity: *default_max_velocity
+    has_acceleration_limits: true
+    max_acceleration: *default_max_acceleration
+  l_leg_hpx:
+    has_velocity_limits: true
+    max_velocity: *default_max_velocity
+    has_acceleration_limits: true
+    max_acceleration: *default_max_acceleration
+  l_leg_hpy:
+    has_velocity_limits: true
+    max_velocity: *default_max_velocity
+    has_acceleration_limits: true
+    max_acceleration: *default_max_acceleration
+  r_arm_elx:
+    has_velocity_limits: true
+    max_velocity: *default_max_velocity
+    has_acceleration_limits: true
+    max_acceleration: *default_max_acceleration
+  l_leg_akx:
+    has_velocity_limits: true
+    max_velocity: *default_max_velocity
+    has_acceleration_limits: true
+    max_acceleration: *default_max_acceleration
+  r_arm_shx:
+    has_velocity_limits: true
+    max_velocity: *default_max_velocity
+    has_acceleration_limits: true
+    max_acceleration: *default_max_acceleration
+  l_leg_aky:
+    has_velocity_limits: true
+    max_velocity: *default_max_velocity
+    has_acceleration_limits: true
+    max_acceleration: *default_max_acceleration
+  r_leg_hpz:
+    has_velocity_limits: true
+    max_velocity: *default_max_velocity
+    has_acceleration_limits: true
+    max_acceleration: *default_max_acceleration

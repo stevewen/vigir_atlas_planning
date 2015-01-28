@@ -4,7 +4,7 @@
 joint_limits:
   back_bky:
     has_velocity_limits: true
-    max_velocity: &default_max_velocity 0.5
+    max_velocity: &default_max_velocity 3.0
     has_acceleration_limits: true
     max_acceleration: &default_max_acceleration 2.4
   back_bkx:

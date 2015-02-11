@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<!-- Pre-defined group states for Atlas
+-->
+<robot name="atlas">
+    <group_state name="l_arm_calib_all_upper_limit" group="l_arm_group">
+        <joint name="l_arm_elx" value="2.237" />
+        <joint name="l_arm_ely" value="3.0003" />
+        <joint name="l_arm_shx" value="1.3767" />
+        <joint name="l_arm_shz" value="0.6529" />
+        <joint name="l_arm_wrx" value="1.0193" />
+        <joint name="l_arm_wry" value="2.9297" />
+    </group_state>
+    <group_state name="l_arm_calib_two_upper_joints_lower_limit" group="l_arm_group">
+        <joint name="l_arm_elx" value="0.1191" />
+        <joint name="l_arm_ely" value="0.1412" />
+        <joint name="l_arm_shx" value="-1.0766" />
+        <joint name="l_arm_shz" value="0.6529" />
+        <joint name="l_arm_wrx" value="-1.0722" />
+        <joint name="l_arm_wry" value="0.1059" />
+    </group_state>
+    <group_state name="l_arm_calib_four_lower_joints_lower_limit" group="l_arm_group">
+        <joint name="l_arm_elx" value="0.3044" />
+        <joint name="l_arm_ely" value="0" />
+        <joint name="l_arm_shx" value="-1.3414" />
+        <joint name="l_arm_shz" value="-1.1869" />
+        <joint name="l_arm_wrx" value="-0.1191" />
+        <joint name="l_arm_wry" value="1.6413" />
+    </group_state>
+</robot>

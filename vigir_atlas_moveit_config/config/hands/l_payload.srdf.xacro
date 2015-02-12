@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface" name="l_payload" >
+
+  <xacro:macro name="disable_left_hand_collision_checks" params="link_name">
+  </xacro:macro>
+
+</robot>

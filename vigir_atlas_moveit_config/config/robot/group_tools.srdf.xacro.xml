@@ -1,5 +1,14 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
+  
+  <xacro:macro name="atlas_v3_6dof_arm_joints_macro" params="prefix">
+    <joint name="${prefix}arm_shy" />
+    <joint name="${prefix}arm_shx" />
+    <joint name="${prefix}arm_ely" />
+    <joint name="${prefix}arm_elx" />
+    <joint name="${prefix}arm_wry" />
+    <joint name="${prefix}arm_wrx" />
+  </xacro:macro>
 
   <xacro:macro name="atlas_6dof_arm_joints_macro" params="prefix">
     <joint name="${prefix}arm_shz" />

@@ -27,5 +27,6 @@
   </xacro:macro>
 
   <xacro:disable_right_hand_collision_checks link_name="r_hand"/>
+  <xacro:disable_right_hand_collision_checks link_name="r_lfarm"/>
 
 </robot>

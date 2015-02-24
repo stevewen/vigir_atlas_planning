@@ -26,4 +26,33 @@
         <joint name="l_arm_wrx" value="-0.1191" />
         <joint name="l_arm_wry" value="1.6413" />
     </group_state>
+    <group_state name="calibration_both_arms_down" group="both_arms_group">
+        <joint name="l_arm_elx" value="0.1191" />
+        <joint name="l_arm_ely" value="0.2118" />
+        <joint name="l_arm_shx" value="-1.4296" />
+        <joint name="l_arm_shz" value="-1.1869" />
+        <joint name="l_arm_wrx" value="1.0325" />
+        <joint name="l_arm_wry" value="0.2471" />
+        <joint name="r_arm_elx" value="-0.1191" />
+        <joint name="r_arm_ely" value="0.1765" />
+        <joint name="r_arm_shx" value="1.3767" />
+        <joint name="r_arm_shz" value="1.1737" />
+        <joint name="r_arm_wrx" value="-0.9928" />
+        <joint name="r_arm_wry" value="0.2824" />
+    </group_state>
+    <group_state name="calibration_both_arms_up" group="both_arms_group">
+        <joint name="l_arm_elx" value="2.1576" />
+        <joint name="l_arm_ely" value="2.8591" />
+        <joint name="l_arm_shx" value="1.2178" />
+        <joint name="l_arm_shz" value="0.5073" />
+        <joint name="l_arm_wrx" value="-0.9928" />
+        <joint name="l_arm_wry" value="2.8944" />
+        <joint name="r_arm_elx" value="-2.1443" />
+        <joint name="r_arm_ely" value="2.9297" />
+        <joint name="r_arm_shx" value="-1.2355" />
+        <joint name="r_arm_shz" value="-0.547" />
+        <joint name="r_arm_wrx" value="1.0457" />
+        <joint name="r_arm_wry" value="2.9121" />
+    </group_state>  
+    
 </robot>

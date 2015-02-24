@@ -433,6 +433,8 @@
       <disable_collisions link1="${disable_robot_link_name}" link2="mtorso" reason="Never" />
       <disable_collisions link1="${disable_robot_link_name}" link2="utorso" reason="Never" />
       
+
+
       <!--Left Arm-->
       <disable_collisions link1="${disable_robot_link_name}" link2="l_clav" reason="Never" />   
       <disable_collisions link1="${disable_robot_link_name}" link2="l_scap" reason="Never" />   

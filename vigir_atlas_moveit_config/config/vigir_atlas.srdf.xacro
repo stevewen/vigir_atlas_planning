@@ -14,6 +14,9 @@
   <xacro:include filename="$(find vigir_atlas_moveit_config)/config/hands/$(env FLOR_LEFT_HAND_TYPE).srdf.xacro" />
   <xacro:include filename="$(find vigir_atlas_moveit_config)/config/hands/$(env FLOR_RIGHT_HAND_TYPE).srdf.xacro" />
   
+  <xacro:disable_left_hand_collision_checks link_name="l_hand"/>
+  <xacro:disable_right_hand_collision_checks link_name="r_hand"/>s  
+  
   <!--
   <xacro:include filename="$(find flor_atlas_moveit_config)/config/multisense/multisense_common.srdf.xacro" />
   <xacro:include filename="$(find flor_atlas_moveit_config)/config/multisense/$(env FLOR_MULTISENSE_TYPE).srdf.xacro" />-->
@@ -26,20 +29,23 @@
     <!--<xacro:disable_multisense_collision_helper link_name="${disable_link_name}"/>-->
   </xacro:macro>    
   
-<!--  <xacro:disable_all_collisions disable_link_name="ltorso" />
-  <xacro:disable_all_collisions disable_link_name="mtorso" />-->
+  <xacro:disable_all_collisions disable_link_name="mtorso" />
   <xacro:disable_all_collisions disable_link_name="hokuyo_link" />
   <xacro:disable_all_collisions disable_link_name="l_situational_awareness_camera_link" />
   <xacro:disable_all_collisions disable_link_name="r_situational_awareness_camera_link" />
-<!--  <xacro:disable_all_collisions disable_link_name="l_uglut" />
+  <xacro:disable_all_collisions disable_link_name="l_talus" />  
+  <xacro:disable_all_collisions disable_link_name="r_talus" />
+  <xacro:disable_all_collisions disable_link_name="imu_link" />
+  <!--  <xacro:disable_all_collisions disable_link_name="ltorso" />-->  
+  <!--  <xacro:disable_all_collisions disable_link_name="l_uglut" />
   <xacro:disable_all_collisions disable_link_name="r_uglut" />
   <xacro:disable_all_collisions disable_link_name="l_lglut" />  
   <xacro:disable_all_collisions disable_link_name="r_lglut" />
   <xacro:disable_all_collisions disable_link_name="l_talus" />  
   <xacro:disable_all_collisions disable_link_name="r_talus" />-->
-  <xacro:disable_all_collisions disable_link_name="imu_link" />-->
+
   
   <!--Disable to be able to close gap between pelvis and utorso-->
-<!--  <disable_collisions link1="pelvis" link2="utorso" reason="Never" />-->
+  <disable_collisions link1="pelvis" link2="utorso" reason="Never" />
    
 </robot>

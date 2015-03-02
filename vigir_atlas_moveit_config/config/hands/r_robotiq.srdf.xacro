@@ -26,6 +26,4 @@
     <xacro:disable_robotiq_hand_collision_helper side="right" link_name="${link_name}"/>     
   </xacro:macro>
 
-  <xacro:disable_right_hand_collision_checks link_name="r_hand"/>
-
 </robot>

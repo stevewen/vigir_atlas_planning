@@ -33,12 +33,13 @@
   <xacro:disable_all_collisions disable_link_name="imu_link" />
 
   <!--Disable collision for thigh links, check simplified version
-      for v5
-  -->
+      for v5. Deactivating as this underestimated collision geom by
+      quite a bit.
   <xacro:disable_all_collisions disable_link_name="l_uglut" />  
   <xacro:disable_all_collisions disable_link_name="r_uglut" />
   <xacro:disable_all_collisions disable_link_name="l_lglut" />  
   <xacro:disable_all_collisions disable_link_name="r_lglut" />
+  -->
 
   
   <!--Disable to be able to close gap between pelvis and utorso-->

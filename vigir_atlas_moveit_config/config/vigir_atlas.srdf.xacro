@@ -12,6 +12,7 @@
   <xacro:include filename="$(find vigir_atlas_moveit_config)/config/hands/$(env FLOR_LEFT_HAND_TYPE).srdf.xacro" />
   <xacro:include filename="$(find vigir_atlas_moveit_config)/config/hands/$(env FLOR_RIGHT_HAND_TYPE).srdf.xacro" />
   
+  <!--Collision checking between last arm link and all hand links always disabled-->
   <xacro:disable_left_hand_collision_checks link_name="l_hand"/>
   <xacro:disable_right_hand_collision_checks link_name="r_hand"/>s  
     
@@ -31,12 +32,13 @@
   <xacro:disable_all_collisions disable_link_name="r_talus" />
   <xacro:disable_all_collisions disable_link_name="imu_link" />
 
-  <!--
+  <!--Disable collision for thigh links, check simplified version
+      for v5
+  -->
+  <xacro:disable_all_collisions disable_link_name="l_uglut" />  
   <xacro:disable_all_collisions disable_link_name="r_uglut" />
   <xacro:disable_all_collisions disable_link_name="l_lglut" />  
   <xacro:disable_all_collisions disable_link_name="r_lglut" />
-  <xacro:disable_all_collisions disable_link_name="l_talus" />  
-  <xacro:disable_all_collisions disable_link_name="r_talus" />-->
 
   
   <!--Disable to be able to close gap between pelvis and utorso-->

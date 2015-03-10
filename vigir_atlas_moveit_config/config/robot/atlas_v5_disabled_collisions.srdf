@@ -31,7 +31,6 @@
     <disable_collisions link1="head" link2="r_uarm" reason="Never" />
     <disable_collisions link1="head" link2="r_uglut" reason="Never" />
     <disable_collisions link1="head" link2="r_uleg" reason="Never" />
-    <disable_collisions link1="head" link2="rear_situational_awareness_camera_link" reason="Never" />
     <disable_collisions link1="head" link2="utorso" reason="Adjacent" />
     <disable_collisions link1="head_imu_link" link2="hokuyo_link" reason="Never" />
     <disable_collisions link1="head_imu_link" link2="imu_link" reason="Never" />
@@ -60,7 +59,6 @@
     <disable_collisions link1="head_imu_link" link2="r_uarm" reason="Never" />
     <disable_collisions link1="head_imu_link" link2="r_uglut" reason="Never" />
     <disable_collisions link1="head_imu_link" link2="r_uleg" reason="Never" />
-    <disable_collisions link1="head_imu_link" link2="rear_situational_awareness_camera_link" reason="Never" />
     <disable_collisions link1="head_imu_link" link2="utorso" reason="Default" />
     <disable_collisions link1="hokuyo_link" link2="imu_link" reason="Never" />
     <disable_collisions link1="hokuyo_link" link2="l_clav" reason="Never" />
@@ -88,7 +86,6 @@
     <disable_collisions link1="hokuyo_link" link2="r_uarm" reason="Never" />
     <disable_collisions link1="hokuyo_link" link2="r_uglut" reason="Never" />
     <disable_collisions link1="hokuyo_link" link2="r_uleg" reason="Never" />
-    <disable_collisions link1="hokuyo_link" link2="rear_situational_awareness_camera_link" reason="Never" />
     <disable_collisions link1="imu_link" link2="l_clav" reason="Never" />
     <disable_collisions link1="imu_link" link2="l_foot" reason="Never" />
     <disable_collisions link1="imu_link" link2="l_larm" reason="Never" />
@@ -114,7 +111,6 @@
     <disable_collisions link1="imu_link" link2="r_uarm" reason="Never" />
     <disable_collisions link1="imu_link" link2="r_uglut" reason="Never" />
     <disable_collisions link1="imu_link" link2="r_uleg" reason="Never" />
-    <disable_collisions link1="imu_link" link2="rear_situational_awareness_camera_link" reason="Never" />
     <disable_collisions link1="imu_link" link2="utorso" reason="Never" />
     <disable_collisions link1="l_clav" link2="l_foot" reason="Never" />
     <disable_collisions link1="l_clav" link2="l_lglut" reason="Never" />
@@ -139,7 +135,6 @@
     <disable_collisions link1="l_clav" link2="r_ufarm" reason="Never" />
     <disable_collisions link1="l_clav" link2="r_uglut" reason="Never" />
     <disable_collisions link1="l_clav" link2="r_uleg" reason="Never" />
-    <disable_collisions link1="l_clav" link2="rear_situational_awareness_camera_link" reason="Never" />
     <disable_collisions link1="l_clav" link2="utorso" reason="Adjacent" />
     <disable_collisions link1="l_foot" link2="l_larm" reason="Never" />
     <disable_collisions link1="l_foot" link2="l_lglut" reason="Never" />
@@ -158,7 +153,6 @@
     <disable_collisions link1="l_foot" link2="r_situational_awareness_camera_link" reason="Never" />
     <disable_collisions link1="l_foot" link2="r_uarm" reason="Never" />
     <disable_collisions link1="l_foot" link2="r_uglut" reason="Never" />
-    <disable_collisions link1="l_foot" link2="rear_situational_awareness_camera_link" reason="Never" />
     <disable_collisions link1="l_larm" link2="l_lfarm" reason="Never" />
     <disable_collisions link1="l_larm" link2="l_scap" reason="Never" />
     <disable_collisions link1="l_larm" link2="l_talus" reason="Never" />
@@ -174,7 +168,6 @@
     <disable_collisions link1="l_larm" link2="r_talus" reason="Never" />
     <disable_collisions link1="l_larm" link2="r_uarm" reason="Never" />
     <disable_collisions link1="l_larm" link2="r_uglut" reason="Never" />
-    <disable_collisions link1="l_larm" link2="rear_situational_awareness_camera_link" reason="Never" />
     <disable_collisions link1="l_lfarm" link2="l_scap" reason="Never" />
     <disable_collisions link1="l_lfarm" link2="l_uarm" reason="Never" />
     <disable_collisions link1="l_lfarm" link2="l_ufarm" reason="Adjacent" />
@@ -200,7 +193,6 @@
     <disable_collisions link1="l_lglut" link2="r_uarm" reason="Never" />
     <disable_collisions link1="l_lglut" link2="r_uglut" reason="Never" />
     <disable_collisions link1="l_lglut" link2="r_uleg" reason="Never" />
-    <disable_collisions link1="l_lglut" link2="rear_situational_awareness_camera_link" reason="Never" />
     <disable_collisions link1="l_lglut" link2="utorso" reason="Never" />
     <disable_collisions link1="l_lleg" link2="l_scap" reason="Never" />
     <disable_collisions link1="l_lleg" link2="l_situational_awareness_camera_link" reason="Never" />
@@ -215,7 +207,6 @@
     <disable_collisions link1="l_lleg" link2="r_situational_awareness_camera_link" reason="Never" />
     <disable_collisions link1="l_lleg" link2="r_uarm" reason="Never" />
     <disable_collisions link1="l_lleg" link2="r_uglut" reason="Never" />
-    <disable_collisions link1="l_lleg" link2="rear_situational_awareness_camera_link" reason="Never" />
     <disable_collisions link1="l_lleg" link2="utorso" reason="Never" />
     <disable_collisions link1="l_scap" link2="l_situational_awareness_camera_link" reason="Never" />
     <disable_collisions link1="l_scap" link2="l_talus" reason="Never" />
@@ -237,7 +228,6 @@
     <disable_collisions link1="l_scap" link2="r_ufarm" reason="Never" />
     <disable_collisions link1="l_scap" link2="r_uglut" reason="Never" />
     <disable_collisions link1="l_scap" link2="r_uleg" reason="Never" />
-    <disable_collisions link1="l_scap" link2="rear_situational_awareness_camera_link" reason="Never" />
     <disable_collisions link1="l_scap" link2="utorso" reason="Never" />
     <disable_collisions link1="l_situational_awareness_camera_link" link2="l_talus" reason="Never" />
     <disable_collisions link1="l_situational_awareness_camera_link" link2="l_uarm" reason="Never" />
@@ -257,7 +247,6 @@
     <disable_collisions link1="l_situational_awareness_camera_link" link2="r_uarm" reason="Never" />
     <disable_collisions link1="l_situational_awareness_camera_link" link2="r_uglut" reason="Never" />
     <disable_collisions link1="l_situational_awareness_camera_link" link2="r_uleg" reason="Never" />
-    <disable_collisions link1="l_situational_awareness_camera_link" link2="rear_situational_awareness_camera_link" reason="Never" />
     <disable_collisions link1="l_situational_awareness_camera_link" link2="utorso" reason="Adjacent" />
     <disable_collisions link1="l_talus" link2="l_uarm" reason="Never" />
     <disable_collisions link1="l_talus" link2="l_uglut" reason="Never" />
@@ -274,7 +263,6 @@
     <disable_collisions link1="l_talus" link2="r_uarm" reason="Never" />
     <disable_collisions link1="l_talus" link2="r_ufarm" reason="Never" />
     <disable_collisions link1="l_talus" link2="r_uglut" reason="Never" />
-    <disable_collisions link1="l_talus" link2="rear_situational_awareness_camera_link" reason="Never" />
     <disable_collisions link1="l_talus" link2="utorso" reason="Never" />
     <disable_collisions link1="l_uarm" link2="l_ufarm" reason="Never" />
     <disable_collisions link1="l_uarm" link2="l_uglut" reason="Never" />
@@ -291,7 +279,6 @@
     <disable_collisions link1="l_uarm" link2="r_ufarm" reason="Never" />
     <disable_collisions link1="l_uarm" link2="r_uglut" reason="Never" />
     <disable_collisions link1="l_uarm" link2="r_uleg" reason="Never" />
-    <disable_collisions link1="l_uarm" link2="rear_situational_awareness_camera_link" reason="Never" />
     <disable_collisions link1="l_ufarm" link2="r_clav" reason="Never" />
     <disable_collisions link1="l_ufarm" link2="r_scap" reason="Never" />
     <disable_collisions link1="l_ufarm" link2="r_talus" reason="Never" />
@@ -310,7 +297,6 @@
     <disable_collisions link1="l_uglut" link2="r_uarm" reason="Never" />
     <disable_collisions link1="l_uglut" link2="r_uglut" reason="Never" />
     <disable_collisions link1="l_uglut" link2="r_uleg" reason="Never" />
-    <disable_collisions link1="l_uglut" link2="rear_situational_awareness_camera_link" reason="Never" />
     <disable_collisions link1="l_uglut" link2="utorso" reason="Never" />
     <disable_collisions link1="l_uleg" link2="mtorso" reason="Never" />
     <disable_collisions link1="l_uleg" link2="r_clav" reason="Never" />
@@ -318,7 +304,6 @@
     <disable_collisions link1="l_uleg" link2="r_scap" reason="Never" />
     <disable_collisions link1="l_uleg" link2="r_situational_awareness_camera_link" reason="Never" />
     <disable_collisions link1="l_uleg" link2="r_uglut" reason="Never" />
-    <disable_collisions link1="l_uleg" link2="rear_situational_awareness_camera_link" reason="Never" />
     <disable_collisions link1="l_uleg" link2="utorso" reason="Never" />
     <disable_collisions link1="ltorso" link2="mtorso" reason="Adjacent" />
     <disable_collisions link1="ltorso" link2="pelvis" reason="Adjacent" />
@@ -333,7 +318,6 @@
     <disable_collisions link1="ltorso" link2="r_uarm" reason="Never" />
     <disable_collisions link1="ltorso" link2="r_uglut" reason="Never" />
     <disable_collisions link1="ltorso" link2="r_uleg" reason="Never" />
-    <disable_collisions link1="ltorso" link2="rear_situational_awareness_camera_link" reason="Never" />
     <disable_collisions link1="ltorso" link2="utorso" reason="Never" />
     <disable_collisions link1="mtorso" link2="pelvis" reason="Default" />
     <disable_collisions link1="mtorso" link2="r_clav" reason="Never" />
@@ -347,7 +331,6 @@
     <disable_collisions link1="mtorso" link2="r_uarm" reason="Never" />
     <disable_collisions link1="mtorso" link2="r_uglut" reason="Never" />
     <disable_collisions link1="mtorso" link2="r_uleg" reason="Never" />
-    <disable_collisions link1="mtorso" link2="rear_situational_awareness_camera_link" reason="Never" />
     <disable_collisions link1="mtorso" link2="utorso" reason="Adjacent" />
     <disable_collisions link1="pelvis" link2="r_clav" reason="Never" />
     <disable_collisions link1="pelvis" link2="r_lglut" reason="Default" />
@@ -355,7 +338,6 @@
     <disable_collisions link1="pelvis" link2="r_situational_awareness_camera_link" reason="Never" />
     <disable_collisions link1="pelvis" link2="r_talus" reason="Never" />
     <disable_collisions link1="pelvis" link2="r_uglut" reason="Adjacent" />
-    <disable_collisions link1="pelvis" link2="rear_situational_awareness_camera_link" reason="Never" />
     <disable_collisions link1="r_clav" link2="r_foot" reason="Never" />
     <disable_collisions link1="r_clav" link2="r_lglut" reason="Never" />
     <disable_collisions link1="r_clav" link2="r_lleg" reason="Never" />
@@ -364,7 +346,6 @@
     <disable_collisions link1="r_clav" link2="r_talus" reason="Never" />
     <disable_collisions link1="r_clav" link2="r_uglut" reason="Never" />
     <disable_collisions link1="r_clav" link2="r_uleg" reason="Never" />
-    <disable_collisions link1="r_clav" link2="rear_situational_awareness_camera_link" reason="Never" />
     <disable_collisions link1="r_clav" link2="utorso" reason="Adjacent" />
     <disable_collisions link1="r_foot" link2="r_larm" reason="Never" />
     <disable_collisions link1="r_foot" link2="r_lglut" reason="Never" />
@@ -374,13 +355,11 @@
     <disable_collisions link1="r_foot" link2="r_uarm" reason="Never" />
     <disable_collisions link1="r_foot" link2="r_uglut" reason="Never" />
     <disable_collisions link1="r_foot" link2="r_uleg" reason="Never" />
-    <disable_collisions link1="r_foot" link2="rear_situational_awareness_camera_link" reason="Never" />
     <disable_collisions link1="r_larm" link2="r_lfarm" reason="Never" />
     <disable_collisions link1="r_larm" link2="r_scap" reason="Never" />
     <disable_collisions link1="r_larm" link2="r_talus" reason="Never" />
     <disable_collisions link1="r_larm" link2="r_uarm" reason="Adjacent" />
     <disable_collisions link1="r_larm" link2="r_ufarm" reason="Adjacent" />
-    <disable_collisions link1="r_larm" link2="rear_situational_awareness_camera_link" reason="Never" />
     <disable_collisions link1="r_lfarm" link2="r_scap" reason="Never" />
     <disable_collisions link1="r_lfarm" link2="r_uarm" reason="Never" />
     <disable_collisions link1="r_lfarm" link2="r_ufarm" reason="Adjacent" />
@@ -390,43 +369,33 @@
     <disable_collisions link1="r_lglut" link2="r_talus" reason="Never" />
     <disable_collisions link1="r_lglut" link2="r_uglut" reason="Adjacent" />
     <disable_collisions link1="r_lglut" link2="r_uleg" reason="Adjacent" />
-    <disable_collisions link1="r_lglut" link2="rear_situational_awareness_camera_link" reason="Never" />
     <disable_collisions link1="r_lglut" link2="utorso" reason="Never" />
     <disable_collisions link1="r_lleg" link2="r_scap" reason="Never" />
     <disable_collisions link1="r_lleg" link2="r_situational_awareness_camera_link" reason="Never" />
     <disable_collisions link1="r_lleg" link2="r_talus" reason="Adjacent" />
     <disable_collisions link1="r_lleg" link2="r_uglut" reason="Never" />
     <disable_collisions link1="r_lleg" link2="r_uleg" reason="Adjacent" />
-    <disable_collisions link1="r_lleg" link2="rear_situational_awareness_camera_link" reason="Never" />
     <disable_collisions link1="r_lleg" link2="utorso" reason="Never" />
     <disable_collisions link1="r_scap" link2="r_situational_awareness_camera_link" reason="Never" />
     <disable_collisions link1="r_scap" link2="r_talus" reason="Never" />
     <disable_collisions link1="r_scap" link2="r_uarm" reason="Adjacent" />
     <disable_collisions link1="r_scap" link2="r_uglut" reason="Never" />
     <disable_collisions link1="r_scap" link2="r_uleg" reason="Never" />
-    <disable_collisions link1="r_scap" link2="rear_situational_awareness_camera_link" reason="Never" />
     <disable_collisions link1="r_scap" link2="utorso" reason="Never" />
     <disable_collisions link1="r_situational_awareness_camera_link" link2="r_talus" reason="Never" />
     <disable_collisions link1="r_situational_awareness_camera_link" link2="r_uarm" reason="Never" />
     <disable_collisions link1="r_situational_awareness_camera_link" link2="r_uglut" reason="Never" />
     <disable_collisions link1="r_situational_awareness_camera_link" link2="r_uleg" reason="Never" />
-    <disable_collisions link1="r_situational_awareness_camera_link" link2="rear_situational_awareness_camera_link" reason="Never" />
     <disable_collisions link1="r_situational_awareness_camera_link" link2="utorso" reason="Adjacent" />
     <disable_collisions link1="r_talus" link2="r_uarm" reason="Never" />
     <disable_collisions link1="r_talus" link2="r_ufarm" reason="Never" />
     <disable_collisions link1="r_talus" link2="r_uglut" reason="Never" />
     <disable_collisions link1="r_talus" link2="r_uleg" reason="Never" />
-    <disable_collisions link1="r_talus" link2="rear_situational_awareness_camera_link" reason="Never" />
     <disable_collisions link1="r_talus" link2="utorso" reason="Never" />
     <disable_collisions link1="r_uarm" link2="r_ufarm" reason="Never" />
     <disable_collisions link1="r_uarm" link2="r_uglut" reason="Never" />
-    <disable_collisions link1="r_uarm" link2="rear_situational_awareness_camera_link" reason="Never" />
-    <disable_collisions link1="r_ufarm" link2="rear_situational_awareness_camera_link" reason="Never" />
-    <disable_collisions link1="r_uglut" link2="rear_situational_awareness_camera_link" reason="Never" />
     <disable_collisions link1="r_uglut" link2="utorso" reason="Never" />
-    <disable_collisions link1="r_uleg" link2="rear_situational_awareness_camera_link" reason="Never" />
     <disable_collisions link1="r_uleg" link2="utorso" reason="Never" />
-    <disable_collisions link1="rear_situational_awareness_camera_link" link2="utorso" reason="Adjacent" />
     
     <xacro:macro name="disable_robot_collision_helper" params="disable_robot_link_name">
       

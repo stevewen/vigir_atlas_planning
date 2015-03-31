@@ -2,8 +2,6 @@
 
 <robot xmlns:xacro="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface" name="atlas" >
   
-  <!--passive_joint name="hokuyo_joint" /-->
-
   <xacro:include filename="$(find vigir_atlas_moveit_config)/config/robot/$(env FLOR_ROBOT_TYPE)_disabled_collisions.srdf"/>
   <xacro:include filename="$(find vigir_atlas_moveit_config)/config/robot/planning_groups.srdf"/>
   <xacro:include filename="$(find vigir_atlas_moveit_config)/config/robot/virtual_joint.srdf"/>
@@ -11,6 +9,9 @@
   
   <xacro:include filename="$(find vigir_atlas_moveit_config)/config/hands/$(env FLOR_LEFT_HAND_TYPE).srdf.xacro" />
   <xacro:include filename="$(find vigir_atlas_moveit_config)/config/hands/$(env FLOR_RIGHT_HAND_TYPE).srdf.xacro" />
+
+  <xacro:include filename="$(find vigir_atlas_moveit_config)/config/head/$(env FLOR_MULTISENSE_TYPE).srdf.xacro" />
+  
   
   <!--Collision checking between last arm link and all hand links always disabled-->
   <xacro:disable_left_hand_collision_checks link_name="l_hand"/>

@@ -4,5 +4,6 @@
 
   <passive_joint name="motor_joint" />
   <passive_joint name="spindle_joint" />
+  <passive_joint name="left_camera_optical_joint" />
 
 </robot>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface" name="head" >
+
+  <passive_joint name="hokuyo_joint" />
+  
+</robot>

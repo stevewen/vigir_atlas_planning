@@ -3,7 +3,9 @@
 <launch>
   
   <node pkg="topic_tools" type="throttle" name="atlas_joint_state_throttle" args="messages /atlas/joint_states 20 /joint_states" />
-  <node pkg="topic_tools" type="throttle" name="multisense_joint_state_throttle" args="messages /multisense_sl/joint_states 20 /joint_states" />
+  
+  <!--We publish directly to joint_states from Multisense now, see #2741-->
+  <!--<node pkg="topic_tools" type="throttle" name="multisense_joint_state_throttle" args="messages /multisense_sl/joint_states 20 /joint_states" />-->
         
   <include file="$(find vigir_atlas_moveit_config)/launch/move_group.launch">
     <arg name="allow_trajectory_execution" value="true"/>

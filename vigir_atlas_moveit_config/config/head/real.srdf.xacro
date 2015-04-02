@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface" name="r_robotiq" >
+
+  <passive_joint name="motor_joint" />
+  <passive_joint name="spindle_joint" />
+  <passive_joint name="left_camera_optical_joint" />
+
+</robot>

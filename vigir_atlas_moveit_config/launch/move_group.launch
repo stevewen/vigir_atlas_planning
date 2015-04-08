@@ -56,8 +56,7 @@
 				      move_group/MoveGroupQueryPlannersService
 				      move_group/MoveGroupStateValidationService
 				      move_group/MoveGroupGetPlanningSceneService
-				      move_group/ClearOctomapService
-				      move_group/MoveGroupCartPosePlanService
+				      move_group/ClearOctomapService				      
 				      move_group/MoveGroupManipulationAction
 				      move_group/OctomapAccessCapability
 				      " />

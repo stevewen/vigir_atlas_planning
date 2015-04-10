@@ -77,4 +77,12 @@
         <group name="l_arm_group" />
         <group name="r_arm_group" />
     </group>
+    <group name="whole_body_group">
+      <xacro:atlas_leg_joints_macro prefix="l_"/>
+      <xacro:atlas_arm_joints_macro prefix="l_"/>
+      <xacro:atlas_arm_joints_macro prefix="r_"/>
+      <xacro:atlas_leg_joints_macro prefix="r_"/>
+      <xacro:atlas_torso_joints_macro/>
+      <joint name="neck_ry" />
+    </group>
 </robot>

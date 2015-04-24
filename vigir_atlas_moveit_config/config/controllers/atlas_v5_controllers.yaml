@@ -1,4 +1,4 @@
- - name: /joint_controllers/left_arm_traj_controller
+ - name: /joint_controllers/left_arm_traj_impedance_controller
    action_ns: follow_joint_trajectory
    type: FollowJointTrajectory
    default: true
@@ -11,7 +11,7 @@
       - l_arm_wrx
       - l_arm_wry2
        
- - name: /joint_controllers/right_arm_traj_controller
+ - name: /joint_controllers/right_arm_traj_impedance_controller
    action_ns: follow_joint_trajectory
    type: FollowJointTrajectory
    default: true

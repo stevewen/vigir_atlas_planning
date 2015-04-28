@@ -45,5 +45,29 @@
   
   <!--Disable to be able to close gap between pelvis and utorso-->
   <disable_collisions link1="pelvis" link2="utorso" reason="Never" />
+  
+  <!--Head vs Torso-->
+  <disable_collisions link1="utorso" link2="head" reason="Never" />
+  <disable_collisions link1="mtorso" link2="head" reason="Never" />
+  <disable_collisions link1="ltorso" link2="head" reason="Never" />
+  
+  <!-- Legs -->
+  
+  <!--Lower-->
+  <disable_collisions link1="r_lleg" link2="r_foot" reason="Never" />
+  <disable_collisions link1="l_lleg" link2="l_foot" reason="Never" />
+ 
+
+
+  <!--Upper-->
+  <disable_collisions link1="r_uglut" link2="r_uleg" reason="Never" />
+  <disable_collisions link1="l_uglut" link2="l_uleg" reason="Never" />
+  
+  <disable_collisions link1="r_uglut" link2="r_lglut" reason="Never" />
+  <disable_collisions link1="l_uglut" link2="l_lglut" reason="Never" />
+  
+  <disable_collisions link1="r_uleg" link2="r_lglut" reason="Never" />
+  <disable_collisions link1="l_uleg" link2="l_lglut" reason="Never" />
+
    
 </robot>

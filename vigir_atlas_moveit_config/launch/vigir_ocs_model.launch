@@ -12,7 +12,7 @@
   </node>
   -->
   
-  <node pkg="vigir_ocs_robot_model" type="moveit_ocs_model_node" name="moveit_ocs_model_node" respawn="true" >
+  <node pkg="vigir_ocs_robot_model" type="moveit_ocs_model_node" name="moveit_ocs_model_node" respawn="true" output="screen" >
     <rosparam command="load" file="$(find vigir_atlas_moveit_config)/config/kinematics.yaml"/>
   </node>
 

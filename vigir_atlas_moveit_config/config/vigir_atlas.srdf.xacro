@@ -26,12 +26,14 @@
   </xacro:macro>    
   
   <xacro:disable_all_collisions disable_link_name="mtorso" />
+  <xacro:disable_all_collisions disable_link_name="ltorso" />
   <xacro:disable_all_collisions disable_link_name="hokuyo_link" />
   <xacro:disable_all_collisions disable_link_name="l_situational_awareness_camera_link" />
   <xacro:disable_all_collisions disable_link_name="r_situational_awareness_camera_link" />
   <xacro:disable_all_collisions disable_link_name="l_talus" />  
   <xacro:disable_all_collisions disable_link_name="r_talus" />
   <xacro:disable_all_collisions disable_link_name="imu_link" />
+  
 
   <!--Disable collision for thigh links, check simplified version
       for v5. Deactivating as this underestimated collision geom by

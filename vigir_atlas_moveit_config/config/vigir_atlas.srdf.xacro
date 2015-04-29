@@ -59,8 +59,6 @@
   <disable_collisions link1="r_lleg" link2="r_foot" reason="Never" />
   <disable_collisions link1="l_lleg" link2="l_foot" reason="Never" />
  
-
-
   <!--Upper-->
   <disable_collisions link1="r_uglut" link2="r_uleg" reason="Never" />
   <disable_collisions link1="l_uglut" link2="l_uleg" reason="Never" />
@@ -70,6 +68,9 @@
   
   <disable_collisions link1="r_uleg" link2="r_lglut" reason="Never" />
   <disable_collisions link1="l_uleg" link2="l_lglut" reason="Never" />
-
+  
+  
+  <disable_collisions link1="pelvis" link2="r_uleg" reason="Never" />
+  <disable_collisions link1="pelvis" link2="l_uleg" reason="Never" />
    
 </robot>

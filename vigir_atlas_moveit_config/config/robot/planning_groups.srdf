@@ -7,7 +7,7 @@
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
   
     <!--<xacro:include filename="$(find vigir_atlas_moveit_config)/config/robot/group_tools.srdf.xacro.xml" />-->
-    <xacro:include filename="$(find vigir_atlas_moveit_config)/config/robot/$(env FLOR_ROBOT_TYPE)_joint_macros.srdf.xacro.xml" />
+    <xacro:include filename="$(find vigir_atlas_moveit_config)/config/robot/$(optenv FLOR_ROBOT_TYPE atlas_v5)_joint_macros.srdf.xacro.xml" />
       
     <group name="l_arm_group">
       <xacro:atlas_arm_joints_macro prefix="l_"/>

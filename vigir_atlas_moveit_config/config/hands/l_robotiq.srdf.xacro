@@ -9,6 +9,13 @@
       <joint name="left_f1_j1" />
       <joint name="left_f2_j1" />
       <joint name="left_f1_j0" />
+      <joint name="left_f2_j0" />
+      <joint name="left_f0_j2" />
+      <joint name="left_f1_j2" />
+      <joint name="left_f2_j2" />
+      <joint name="left_f0_j3" />
+      <joint name="left_f1_j3" />
+      <joint name="left_f2_j3" />
   </group>
   
   <end_effector name="l_hand_eef" parent_link="l_hand" group="left_hand" />

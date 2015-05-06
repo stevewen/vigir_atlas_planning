@@ -3,6 +3,6 @@ moveit_setup_assistant_config:
     package: atlas_description
     relative_path: robots/vigir_atlas.urdf.xacro
   SRDF:
-    relative_path: config/atlas.srdf
+    relative_path: config/vigir_atlas.srdf.generated
   CONFIG:
     generated_timestamp: 1420806475

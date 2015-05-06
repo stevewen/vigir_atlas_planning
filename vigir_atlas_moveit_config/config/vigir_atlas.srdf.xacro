@@ -2,15 +2,15 @@
 
 <robot xmlns:xacro="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface" name="atlas" >
   
-  <xacro:include filename="$(find vigir_atlas_moveit_config)/config/robot/$(env FLOR_ROBOT_TYPE)_disabled_collisions.srdf"/>
+  <xacro:include filename="$(find vigir_atlas_moveit_config)/config/robot/$(optenv FLOR_ROBOT_TYPE atlas_v5)_disabled_collisions.srdf"/>
   <xacro:include filename="$(find vigir_atlas_moveit_config)/config/robot/planning_groups.srdf"/>
   <xacro:include filename="$(find vigir_atlas_moveit_config)/config/robot/virtual_joint.srdf"/>
   <xacro:include filename="$(find vigir_atlas_moveit_config)/config/group_states/group_states.srdf"/>
   
-  <xacro:include filename="$(find vigir_atlas_moveit_config)/config/hands/$(env FLOR_LEFT_HAND_TYPE).srdf.xacro" />
-  <xacro:include filename="$(find vigir_atlas_moveit_config)/config/hands/$(env FLOR_RIGHT_HAND_TYPE).srdf.xacro" />
+  <xacro:include filename="$(find vigir_atlas_moveit_config)/config/hands/$(optenv FLOR_LEFT_HAND_TYPE l_stump).srdf.xacro" />
+  <xacro:include filename="$(find vigir_atlas_moveit_config)/config/hands/$(optenv FLOR_RIGHT_HAND_TYPE r_stump).srdf.xacro" />
 
-  <xacro:include filename="$(find vigir_atlas_moveit_config)/config/head/$(env FLOR_MULTISENSE_TYPE).srdf.xacro" />
+  <xacro:include filename="$(find vigir_atlas_moveit_config)/config/head/$(optenv FLOR_MULTISENSE_TYPE sim).srdf.xacro" />
   
   
   <!--Collision checking between last arm link and all hand links always disabled-->
@@ -26,12 +26,14 @@
   </xacro:macro>    
   
   <xacro:disable_all_collisions disable_link_name="mtorso" />
+  <xacro:disable_all_collisions disable_link_name="ltorso" />
   <xacro:disable_all_collisions disable_link_name="hokuyo_link" />
   <xacro:disable_all_collisions disable_link_name="l_situational_awareness_camera_link" />
   <xacro:disable_all_collisions disable_link_name="r_situational_awareness_camera_link" />
   <xacro:disable_all_collisions disable_link_name="l_talus" />  
   <xacro:disable_all_collisions disable_link_name="r_talus" />
   <xacro:disable_all_collisions disable_link_name="imu_link" />
+  
 
   <!--Disable collision for thigh links, check simplified version
       for v5. Deactivating as this underestimated collision geom by
@@ -57,8 +59,6 @@
   <disable_collisions link1="r_lleg" link2="r_foot" reason="Never" />
   <disable_collisions link1="l_lleg" link2="l_foot" reason="Never" />
  
-
-
   <!--Upper-->
   <disable_collisions link1="r_uglut" link2="r_uleg" reason="Never" />
   <disable_collisions link1="l_uglut" link2="l_uleg" reason="Never" />
@@ -68,6 +68,9 @@
   
   <disable_collisions link1="r_uleg" link2="r_lglut" reason="Never" />
   <disable_collisions link1="l_uleg" link2="l_lglut" reason="Never" />
-
+  
+  
+  <disable_collisions link1="pelvis" link2="r_uleg" reason="Never" />
+  <disable_collisions link1="pelvis" link2="l_uleg" reason="Never" />
    
 </robot>

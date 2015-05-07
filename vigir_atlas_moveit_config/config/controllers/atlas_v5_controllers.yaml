@@ -33,7 +33,7 @@
       - back_bky
       - back_bkx
       
- - name: /joint_controllers/left_leg_traj_im edance_controller
+ - name: /joint_controllers/left_leg_traj_impedance_controller
    action_ns: follow_joint_trajectory
    type: FollowJointTrajectory
    default: true

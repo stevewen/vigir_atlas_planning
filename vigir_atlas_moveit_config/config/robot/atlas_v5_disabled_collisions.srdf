@@ -416,5 +416,38 @@
       <disable_collisions link1="${disable_robot_link_name}" link2="r_situational_awareness_camera_optical_frame" reason="Never" />
       <disable_collisions link1="${disable_robot_link_name}" link2="l_situational_awareness_camera_link" reason="Never" />
       <disable_collisions link1="${disable_robot_link_name}" link2="l_situational_awareness_camera_optical_frame" reason="Never" />
-    </xacro:macro>        
+    </xacro:macro> 
+    
+    <xacro:macro name="disable_all_but_arms_collision_helper" params="disable_robot_link_name">
+      
+      <!--Torso-->  
+      <disable_collisions link1="${disable_robot_link_name}" link2="pelvis" reason="Never" />
+      <disable_collisions link1="${disable_robot_link_name}" link2="ltorso" reason="Never" />
+      <disable_collisions link1="${disable_robot_link_name}" link2="mtorso" reason="Never" />
+      <disable_collisions link1="${disable_robot_link_name}" link2="utorso" reason="Never" />
+            
+      <!--Left Leg-->
+      <disable_collisions link1="${disable_robot_link_name}" link2="l_uglut" reason="Never" />
+      <disable_collisions link1="${disable_robot_link_name}" link2="l_lglut" reason="Never" />
+      <disable_collisions link1="${disable_robot_link_name}" link2="l_uleg" reason="Never" />
+      <disable_collisions link1="${disable_robot_link_name}" link2="l_lleg" reason="Never" />
+      <disable_collisions link1="${disable_robot_link_name}" link2="l_talus" reason="Never" />
+      <disable_collisions link1="${disable_robot_link_name}" link2="l_foot" reason="Never" />
+      
+      <!--Right Leg-->
+      <disable_collisions link1="${disable_robot_link_name}" link2="r_uglut" reason="Never" />
+      <disable_collisions link1="${disable_robot_link_name}" link2="r_lglut" reason="Never" />
+      <disable_collisions link1="${disable_robot_link_name}" link2="r_uleg" reason="Never" />
+      <disable_collisions link1="${disable_robot_link_name}" link2="r_lleg" reason="Never" />
+      <disable_collisions link1="${disable_robot_link_name}" link2="r_talus" reason="Never" />
+      <disable_collisions link1="${disable_robot_link_name}" link2="r_foot" reason="Never" />
+      
+      <!--Helper Links-->
+      <disable_collisions link1="${disable_robot_link_name}" link2="imu_link" reason="Never" />
+      <disable_collisions link1="${disable_robot_link_name}" link2="r_situational_awareness_camera_link" reason="Never" />
+      <disable_collisions link1="${disable_robot_link_name}" link2="r_situational_awareness_camera_optical_frame" reason="Never" />
+      <disable_collisions link1="${disable_robot_link_name}" link2="l_situational_awareness_camera_link" reason="Never" />
+      <disable_collisions link1="${disable_robot_link_name}" link2="l_situational_awareness_camera_optical_frame" reason="Never" />
+    </xacro:macro>       
+    
 </robot>

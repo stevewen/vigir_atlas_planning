@@ -17,6 +17,13 @@
       <joint name="right_f1_j3" />
       <joint name="right_f2_j3" />
   </group>
+
+  <group name="active_right_hand">
+      <joint name="right_f0_j1" />
+      <joint name="right_f1_j1" />
+      <joint name="right_f2_j1" />
+      <joint name="right_f1_j0" />
+  </group>
   
   <end_effector name="r_hand_eef" parent_link="r_hand" group="right_hand" />
 

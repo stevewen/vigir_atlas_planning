@@ -11,3 +11,9 @@ scan_filter_chain:
     max_angle: 170
     neighbors: 4
     window: 1
+- name: dark_shadows
+  type: laser_filters/LaserScanIntensityFilter
+  params: 
+    lower_threshold: 600
+    upper_threshold: 100000
+    disp_histogram: 0    

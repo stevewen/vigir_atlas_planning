@@ -34,8 +34,10 @@
   <xacro:disable_all_collisions disable_link_name="r_talus" />
   <xacro:disable_all_collisions disable_link_name="imu_link" />
   
+  <!--
   <xacro:disable_robot_collision_helper disable_robot_link_name="left_poking_stick"/>
   <xacro:disable_robot_collision_helper disable_robot_link_name="right_poking_stick"/>
+  -->
   
 
   <!--Disable collision for thigh links, check simplified version

@@ -2,15 +2,15 @@
 
 <robot xmlns:xacro="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface" name="atlas" >
   
-  <xacro:include filename="$(find vigir_atlas_moveit_config)/config/robot/$(optenv FLOR_ROBOT_TYPE atlas_v5)_disabled_collisions.srdf"/>
+  <xacro:include filename="$(find vigir_atlas_moveit_config)/config/robot/$(optenv VIGIR_ATLAS_ROBOT_TYPE atlas_v5)_disabled_collisions.srdf"/>
   <xacro:include filename="$(find vigir_atlas_moveit_config)/config/robot/planning_groups.srdf"/>
   <xacro:include filename="$(find vigir_atlas_moveit_config)/config/robot/virtual_joint.srdf"/>
   <xacro:include filename="$(find vigir_atlas_moveit_config)/config/group_states/group_states.srdf"/>
   
-  <xacro:include filename="$(find vigir_atlas_moveit_config)/config/hands/$(optenv FLOR_LEFT_HAND_TYPE l_stump).srdf.xacro" />
-  <xacro:include filename="$(find vigir_atlas_moveit_config)/config/hands/$(optenv FLOR_RIGHT_HAND_TYPE r_stump).srdf.xacro" />
+  <xacro:include filename="$(find vigir_atlas_moveit_config)/config/hands/$(optenv VIGIR_ATLAS_LEFT_HAND_TYPE l_stump).srdf.xacro" />
+  <xacro:include filename="$(find vigir_atlas_moveit_config)/config/hands/$(optenv VIGIR_ATLAS_RIGHT_HAND_TYPE r_stump).srdf.xacro" />
 
-  <xacro:include filename="$(find vigir_atlas_moveit_config)/config/head/$(optenv FLOR_MULTISENSE_TYPE sim).srdf.xacro" />
+  <xacro:include filename="$(find vigir_atlas_moveit_config)/config/head/$(optenv VIGIR_ATLAS_MULTISENSE_TYPE sim).srdf.xacro" />
   
   
   <!--Collision checking between last arm link and all hand links always disabled-->
